@@ -817,7 +817,6 @@ hr {
 
 .swinger {
   position: absolute;
-  top: -12px;
   width: 90px; }
 
 .swinger-arm {
@@ -829,7 +828,7 @@ hr {
 .web-strand {
   display: block;
   width: 2px;
-  height: 230px;
+  height: 160px;
   margin: 0 auto;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.9));
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.45);
@@ -837,18 +836,19 @@ hr {
 
 .hero-svg {
   display: block;
-  width: 78px;
-  height: 118px;
-  margin: -6px auto 0;
+  width: 70px;
+  height: 102px;
+  margin: -8px auto 0;
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.45));
   -webkit-animation: hero-lean 4s ease-in-out infinite;
   -moz-animation: hero-lean 4s ease-in-out infinite;
   animation: hero-lean 4s ease-in-out infinite; }
 
 .swinger-a {
-  left: 3%; }
+  left: 10px;
+  top: 210px; }
   .swinger-a .web-strand {
-    height: 280px; }
+    height: 170px; }
   .swinger-a .swinger-arm,
   .swinger-a .hero-svg {
     -webkit-animation-duration: 4.4s;
@@ -856,79 +856,77 @@ hr {
     animation-duration: 4.4s; }
 
 .swinger-b {
-  right: 4%;
-  top: -6px; }
+  right: 18px;
+  top: 230px; }
   .swinger-b .web-strand {
-    height: 210px; }
+    height: 150px; }
   .swinger-b .hero-svg {
-    width: 64px;
-    height: 96px; }
+    width: 58px;
+    height: 84px; }
   .swinger-b .swinger-arm,
   .swinger-b .hero-svg {
-    -webkit-animation-duration: 3.5s;
-    -moz-animation-duration: 3.5s;
-    animation-duration: 3.5s;
+    -webkit-animation-duration: 3.6s;
+    -moz-animation-duration: 3.6s;
+    animation-duration: 3.6s;
     -webkit-animation-delay: -1.6s;
     -moz-animation-delay: -1.6s;
     animation-delay: -1.6s; }
 
 .swinger-c {
-  top: -18px;
-  -webkit-animation: fly-right 12s linear infinite;
-  -moz-animation: fly-right 12s linear infinite;
-  animation: fly-right 12s linear infinite; }
+  -webkit-animation: fly-right 10s linear infinite;
+  -moz-animation: fly-right 10s linear infinite;
+  animation: fly-right 10s linear infinite; }
   .swinger-c .web-strand {
-    height: 160px; }
+    height: 42px; }
   .swinger-c .hero-svg {
-    width: 58px;
-    height: 88px; }
+    width: 44px;
+    height: 64px; }
   .swinger-c .swinger-arm,
   .swinger-c .hero-svg {
-    -webkit-animation-duration: 2.6s;
-    -moz-animation-duration: 2.6s;
-    animation-duration: 2.6s; }
+    -webkit-animation-duration: 2.4s;
+    -moz-animation-duration: 2.4s;
+    animation-duration: 2.4s; }
 
 .swinger-d {
-  top: 8%;
-  -webkit-animation: fly-left 14s linear infinite;
-  -moz-animation: fly-left 14s linear infinite;
-  animation: fly-left 14s linear infinite;
-  -webkit-animation-delay: -7s;
-  -moz-animation-delay: -7s;
-  animation-delay: -7s; }
+  -webkit-animation: fly-left 13s linear infinite;
+  -moz-animation: fly-left 13s linear infinite;
+  animation: fly-left 13s linear infinite;
+  -webkit-animation-delay: -6s;
+  -moz-animation-delay: -6s;
+  animation-delay: -6s; }
   .swinger-d .swinger-mirror {
     transform: scaleX(-1);
     transform-origin: 50% 0; }
   .swinger-d .web-strand {
-    height: 190px; }
+    height: 36px; }
   .swinger-d .hero-svg {
-    width: 52px;
-    height: 80px; }
+    width: 40px;
+    height: 58px; }
   .swinger-d .swinger-arm,
   .swinger-d .hero-svg {
-    -webkit-animation-duration: 3.1s;
-    -moz-animation-duration: 3.1s;
-    animation-duration: 3.1s; }
+    -webkit-animation-duration: 2.8s;
+    -moz-animation-duration: 2.8s;
+    animation-duration: 2.8s; }
 
 @-webkit-keyframes pendulum {
   0%, 100% {
-    -webkit-transform: rotate(-40deg);
-    transform: rotate(-40deg); }
+    -webkit-transform: rotate(-28deg);
+    transform: rotate(-28deg); }
   50% {
-    -webkit-transform: rotate(40deg);
-    transform: rotate(40deg); } }
+    -webkit-transform: rotate(28deg);
+    transform: rotate(28deg); } }
 @-moz-keyframes pendulum {
   0%, 100% {
-    -moz-transform: rotate(-40deg);
-    transform: rotate(-40deg); }
+    -moz-transform: rotate(-28deg);
+    transform: rotate(-28deg); }
   50% {
-    -moz-transform: rotate(40deg);
-    transform: rotate(40deg); } }
+    -moz-transform: rotate(28deg);
+    transform: rotate(28deg); } }
 @keyframes pendulum {
   0%, 100% {
-    transform: rotate(-40deg); }
+    transform: rotate(-28deg); }
   50% {
-    transform: rotate(40deg); } }
+    transform: rotate(28deg); } }
 
 @-webkit-keyframes hero-lean {
   0%, 100% {
@@ -953,68 +951,64 @@ hr {
 @-webkit-keyframes fly-right {
   0% {
     left: -12%;
-    top: -20px; }
-  45% {
-    top: 36px; }
+    top: -18px; }
   100% {
     left: 112%;
-    top: -8px; } }
+    top: -18px; } }
 @-moz-keyframes fly-right {
   0% {
     left: -12%;
-    top: -20px; }
-  45% {
-    top: 36px; }
+    top: -18px; }
   100% {
     left: 112%;
-    top: -8px; } }
+    top: -18px; } }
 @keyframes fly-right {
   0% {
     left: -12%;
-    top: -20px; }
-  45% {
-    top: 36px; }
+    top: -18px; }
   100% {
     left: 112%;
-    top: -8px; } }
+    top: -18px; } }
 
 @-webkit-keyframes fly-left {
   0% {
     left: 112%;
-    top: 10%; }
-  50% {
-    top: 18%; }
+    top: 8px; }
   100% {
     left: -14%;
-    top: 6%; } }
+    top: 8px; } }
 @-moz-keyframes fly-left {
   0% {
     left: 112%;
-    top: 10%; }
-  50% {
-    top: 18%; }
+    top: 8px; }
   100% {
     left: -14%;
-    top: 6%; } }
+    top: 8px; } }
 @keyframes fly-left {
   0% {
     left: 112%;
-    top: 10%; }
-  50% {
-    top: 18%; }
+    top: 8px; }
   100% {
     left: -14%;
-    top: 6%; } }
+    top: 8px; } }
 
-@media screen and (max-width: 900px) {
-  .swinger-c,
-  .swinger-d {
-    display: none; }
+@media screen and (max-width: 860px) {
   .swinger-a,
   .swinger-b {
-    opacity: 0.7;
-    transform: scale(0.72);
-    transform-origin: top center; } }
+    opacity: 0.85;
+    transform: scale(0.78);
+    transform-origin: top center; }
+  .swinger-a {
+    left: 0;
+    top: 200px; }
+  .swinger-b {
+    right: 0;
+    top: 320px; } }
+
+@media screen and (max-width: 520px) {
+  .swinger-a,
+  .swinger-b {
+    display: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   .skyline {
