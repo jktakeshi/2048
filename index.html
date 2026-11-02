@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>2048</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
@@ -17,6 +20,50 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
+  <div class="skyline" aria-hidden="true">
+    <svg class="hero-defs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="hero-swing" viewBox="0 0 80 120">
+        <path d="M40 6 C38 18, 36 26, 34 32" fill="none" stroke="#e23636" stroke-width="5" stroke-linecap="round"/>
+        <path d="M30 40 C18 46, 12 54, 8 64" fill="none" stroke="#2b5cad" stroke-width="4.5" stroke-linecap="round"/>
+        <ellipse cx="28" cy="44" rx="11" ry="16" fill="#e23636" transform="rotate(-18 28 44)"/>
+        <circle cx="34" cy="24" r="9" fill="#e23636"/>
+        <ellipse cx="31" cy="23" rx="3.4" ry="2.5" fill="#fff8f0" transform="rotate(-22 31 23)"/>
+        <ellipse cx="38" cy="23" rx="3.4" ry="2.5" fill="#fff8f0" transform="rotate(12 38 23)"/>
+        <ellipse cx="24" cy="60" rx="9" ry="7" fill="#2b5cad" transform="rotate(-16 24 60)"/>
+        <path d="M22 64 C16 80, 12 96, 10 112" fill="none" stroke="#2b5cad" stroke-width="6" stroke-linecap="round"/>
+        <path d="M28 62 C42 72, 56 78, 70 86" fill="none" stroke="#2b5cad" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="40" cy="5" r="3.2" fill="#f4e4dc"/>
+      </symbol>
+    </svg>
+
+    <div class="swinger swinger-a">
+      <div class="swinger-arm">
+        <span class="web-strand"></span>
+        <svg class="hero-svg"><use href="#hero-swing" xlink:href="#hero-swing"></use></svg>
+      </div>
+    </div>
+    <div class="swinger swinger-b">
+      <div class="swinger-arm">
+        <span class="web-strand"></span>
+        <svg class="hero-svg"><use href="#hero-swing" xlink:href="#hero-swing"></use></svg>
+      </div>
+    </div>
+    <div class="swinger swinger-c">
+      <div class="swinger-arm">
+        <span class="web-strand"></span>
+        <svg class="hero-svg"><use href="#hero-swing" xlink:href="#hero-swing"></use></svg>
+      </div>
+    </div>
+    <div class="swinger swinger-d">
+      <div class="swinger-mirror">
+        <div class="swinger-arm">
+          <span class="web-strand"></span>
+          <svg class="hero-svg"><use href="#hero-swing" xlink:href="#hero-swing"></use></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="heading">
       <h1 class="title">2048</h1>
@@ -27,15 +74,15 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-      <a class="restart-button">New Game</a>
+      <p class="game-intro">Swing the tiles and get to the <strong>2048 tile!</strong></p>
+      <a class="restart-button">New Mission</a>
     </div>
 
     <div class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
+	        <a class="keep-playing-button">Keep swinging</a>
           <a class="retry-button">Try again</a>
         </div>
       </div>
@@ -73,7 +120,7 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to sling the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
     <hr>
     <p>
